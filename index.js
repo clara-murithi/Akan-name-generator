@@ -1,11 +1,3 @@
-// script.js
-// Akan Day Name Generator
-// Matches this markup:
-//   <select id="Gender"><option>Male</option><option>Female</option></select>
-//   <input id="date">   (day of month)
-//   <input id="Month">  (type="text" in the markup, still parsed as a number)
-//   <input id="Year">
-//   <form id="oldEnough"> ... <button type="submit">Generate name</button> ... </form>
 
 // Akan day names, indexed 0 (Sunday) through 6 (Saturday)
 const akanNames = [
