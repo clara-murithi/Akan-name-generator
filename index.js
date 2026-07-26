@@ -117,5 +117,5 @@ function handleCalculate(resultEl, errorEl) {
   // 5. Display the result on the webpage
   resultEl.innerHTML =
     `You were born on a ${nameInfo.day}. Your Akan day name is <span class="akan-name">${akanName}</span>.`;
-  resultEl.classList.add("show");
+  resultEl.classList.add ("show");
 }
