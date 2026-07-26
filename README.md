@@ -69,8 +69,8 @@ Below are the core behaviors of the application, written as Given/When/Then scen
 
 ## Technologies Used
 
-- **HTML5** – page structure and semantic markup
-- **CSS3** – layout, styling, and animations
+- **HTML5** – page structure and semantic markup.
+- **CSS3** – layout, styling, and animations.
 - **JavaScript (Vanilla ES6+)** – form validation, date calculation logic, and DOM manipulation
 - **Font Awesome** (via CDN) – social media icons in the footer
 
