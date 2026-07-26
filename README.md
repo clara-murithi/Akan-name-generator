@@ -91,7 +91,7 @@ This project is licensed under the **MIT License** — you are free to use, copy
 ```
 MIT License
 
-Copyright (c) 2026 [Your Name / Akan Heritage]
+Copyright (c) 2026 [Clara Murithi / Akan Heritage]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
