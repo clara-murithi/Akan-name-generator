@@ -76,7 +76,7 @@ function handleCalculate(resultEl, errorEl) {
   const year = parseInt (yearInput.value, 10);
   const gender = genderInput.value; // "Male" or "Female"
 
-  // 2. Validate input
+  // 2.Validate input
   const errors = [];
 
   if (isNaN(month) || month < 1 || month > 12) {
