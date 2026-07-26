@@ -95,6 +95,7 @@ function handleCalculate(resultEl, errorEl) {
     const maxDay = getDaysInMonth(month, year);
     if (day > maxDay) {
       errors.push(`Day must be between 1 and ${ maxDay } for the selected month.`);
+      
     }
   }
 
