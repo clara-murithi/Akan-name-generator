@@ -100,7 +100,7 @@ function handleCalculate(resultEl, errorEl) {
   }
 
   if (!gender) {
-    errors.push("Please select a gender.");
+    errors.push(" Please select a gender.");
   }
 
   if ( errors.length > 0) {
