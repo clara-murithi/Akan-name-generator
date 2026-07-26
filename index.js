@@ -102,7 +102,7 @@ function handleCalculate(resultEl, errorEl) {
     errors.push("Please select a gender.");
   }
 
-  if (errors.length > 0) {
+  if ( errors.length > 0) {
     errorEl.textContent = errors.join(" ");
     return;
   }
