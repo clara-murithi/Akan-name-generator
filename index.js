@@ -104,7 +104,7 @@ function handleCalculate(resultEl, errorEl) {
   }
 
   if ( errors.length > 0) {
-    errorEl.textContent = errors.join(" ");
+    errorEl.textContent = errors.join (" ");
     return;
   }
 
