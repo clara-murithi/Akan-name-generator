@@ -94,7 +94,7 @@ function handleCalculate(resultEl, errorEl) {
   } else if (!isNaN(month) && month >= 1 && month <= 12 && !isNaN(year) && year >= 1) {
     const maxDay = getDaysInMonth(month, year);
     if (day > maxDay) {
-      errors.push(`Day must be between 1 and ${maxDay} for the selected month.`);
+      errors.push(`Day must be between 1 and ${ maxDay } for the selected month.`);
     }
   }
 
@@ -107,14 +107,6 @@ function handleCalculate(resultEl, errorEl) {
     return;
   }
 
-  // 3. Calculate the day of the week
-  // Note: the originally-specified formula
-  // d = ((4*CC - 2*CC - 1) + 45*YY + 1026*(MM+1) + DD) mod 7
-  // was tested against known dates (e.g. 20 Mar 2008 = Thursday) and
-  // produces incorrect results for many dates - the month term doesn't
-  // correctly account for real, varying month lengths. Using JavaScript's
-  // built-in Date object instead guarantees an accurate result.
-  // month - 1 because JS Date months are zero-indexed (0 = January).
   const d = new Date(year, month - 1, day).getDay(); // 0 = Sunday ... 6 = Saturday
 
   // 4. Match the calculated day to the corresponding Akan name
