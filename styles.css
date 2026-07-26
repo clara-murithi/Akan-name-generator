@@ -228,7 +228,7 @@ footer p{
 }
 
 .hero{
-     width:80%;
+    width:80%;
     margin:50px auto;
     background:rgba(255,248,240,.18);
     backdrop-filter:blur(12px);
