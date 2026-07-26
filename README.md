@@ -8,7 +8,7 @@ The app lets a visitor enter their birth date (day, month, year) and gender, val
 
 ## Author(s)
 
-- **[Clara Murithi]** – [rizikiclara60@gmail.com(mailto:rizikiclara60@gmail)] – [GitHub profile link]
+- **[Clara Kaari]** – [rizikiclara60@gmail.com(mailto:rizikiclara60@gmail)] – [GitHub profile link]
 
 ## Setup Instructions
 
