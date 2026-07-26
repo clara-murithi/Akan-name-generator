@@ -71,9 +71,9 @@ function handleCalculate(resultEl, errorEl) {
   const yearInput = document.getElementById("Year");
   const genderInput = document.getElementById("Gender");
 
-  const day = parseInt(dayInput.value, 10);
-  const month = parseInt(monthInput.value, 10);
-  const year = parseInt(yearInput.value, 10);
+  const day = parseInt (dayInput.value, 10);
+  const month = parseInt (monthInput.value, 10);
+  const year = parseInt (yearInput.value, 10);
   const gender = genderInput.value; // "Male" or "Female"
 
   // 2. Validate input
@@ -95,7 +95,7 @@ function handleCalculate(resultEl, errorEl) {
     const maxDay = getDaysInMonth(month, year);
     if (day > maxDay) {
       errors.push(`Day must be between 1 and ${ maxDay } for the selected month.`);
-      
+
     }
   }
 
