@@ -108,14 +108,41 @@ function handleCalculate(resultEl, errorEl) {
     return;
   }
 
-  const d = new Date(year, month - 1, day).getDay(); // 0 = Sunday ... 6 = Saturday
+  // Calculate the day of the week using Zeller's Congruence
+let m = month;
+let y = year;
 
-  // 4. Match the calculated day to the corresponding Akan name
-  const nameInfo = akanNames[d];
-  const akanName = gender === "Male" ? nameInfo.male : nameInfo.female;
+if (m < 3) {
+  m += 12;
+  y--;
+}
 
-  // 5. Display the result on the webpage
-  resultEl.innerHTML =
-    `You were born on a ${nameInfo.day}. Your Akan day name is <span class="akan-name">${akanName}</span>.`;
-  resultEl.classList.add ("show");
+const DD = day;
+const YY = y % 100;
+const CC = Math.floor(y / 100);
+
+let d = (
+  DD +
+  Math.floor((13 * (m + 1)) / 5) +
+  YY +
+  Math.floor(YY / 4) +
+  Math.floor(CC / 4) -
+  (2 * CC)
+) % 7;
+
+if (d < 0) {
+  d += 7;
+}
+
+const dayIndex = (d + 6) % 7;
+
+// Match the calculated day to the corresponding Akan name
+const nameInfo = akanNames[dayIndex];
+const akanName = gender === "Male" ? nameInfo.male : nameInfo.female;
+
+// Display the result
+resultEl.innerHTML =
+  `You were born on a ${nameInfo.day}. Your Akan day name is <span class="akan-name">${akanName}</span>.`;
+
+resultEl.classList.add("show");
 }
